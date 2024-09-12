@@ -21,10 +21,10 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 
-# Добавляем директорию с заголовочными файлами
+# Добавление директории с заголовочными файлами
 include_directories(include)
 
-# Добавляем исходные файлы
+# Добавление исходных файлов
 add_executable(lab01 1lab.cpp perevodik.cpp)
 
 # Добавление тестов
