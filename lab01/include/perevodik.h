@@ -4,7 +4,7 @@
 
 #include <string>
 
-// Объявление функции
+
 std::string perevodik(int hour, int minute, const std::string& period);
 
 #endif 
