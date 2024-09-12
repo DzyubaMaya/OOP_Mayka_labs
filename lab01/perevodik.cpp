@@ -28,7 +28,7 @@ std::string perevodik(int hour, int minute, const std::string& period) {
     // Форматирование в формат строки
     std::string resultatik;
 
-    // Добавляем часы
+    // Добавляем часики
     if (hour < 10) {
         resultatik += "0";
     }
@@ -37,7 +37,7 @@ std::string perevodik(int hour, int minute, const std::string& period) {
     // Добавляем двоеточие для красоты
     resultatik += ":";
 
-    // Добавляем минуты
+    // Добавляем минуточки
     if (minute < 10) {
         resultatik += "0";
     }
