@@ -1,23 +1,23 @@
 
 #include <iostream>
 #include <string>
-#include "perevodik.h"
+#include "perevod.h"
 
 int main() {
     int hour, minute;
     std::string period;
-    std::string resultatik;
+    std::string result;
 
     // Ввод данных пользователем для часов
     while (true) {
         std::cout << "Введите час (1-12): ";
         std::cin >> hour;
         //проверяем часы
-        resultatik = perevodik(hour, 0, "am"); 
-        if (resultatik.find("Ошибка") == std::string::npos) {
+        result = perevod(hour, 0, "am"); 
+        if (result.find("Ошибка") == std::string::npos) {
             break;
         }
-        std::cout << resultatik << std::endl;
+        std::cout << result << std::endl;
     }
 
     // Ввод данных пользователем для минут
@@ -25,11 +25,11 @@ int main() {
         std::cout << "Введите минуты (0-59): ";
         std::cin >> minute;
         //проверяем минуты
-        resultatik = perevodik(1, minute, "am"); 
-        if (resultatik.find("Ошибка") == std::string::npos) {
+        result = perevod(1, minute, "am"); 
+        if (result.find("Ошибка") == std::string::npos) {
             break;
         }
-        std::cout << resultatik << std::endl;
+        std::cout << result << std::endl;
     }
 
     // Ввод данных пользователем для периода
@@ -37,16 +37,16 @@ int main() {
         std::cout << "Введите период (am/pm): ";
         std::cin >> period;
         //проверяем период
-        resultatik = perevodik(1, 0, period); 
-        if (resultatik.find("Ошибка") == std::string::npos) {
+        result = perevod(1, 0, period); 
+        if (result.find("Ошибка") == std::string::npos) {
             break;
         }
-        std::cout << resultatik << std::endl;
+        std::cout << result << std::endl;
     }
 
     // Преобразование и вывод результата
-    resultatik = perevodik(hour, minute, period);
-    std::cout << "Время в 24-часовом формате: " << resultatik << std::endl;
+    result = perevod(hour, minute, period);
+    std::cout << "Время в 24-часовом формате: " << result << std::endl;
 
     return 0;
 }

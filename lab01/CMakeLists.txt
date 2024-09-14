@@ -25,12 +25,12 @@ FetchContent_MakeAvailable(googletest)
 include_directories(include)
 
 # Добавление исходных файлов
-add_executable(lab01 1lab.cpp perevodik.cpp)
+add_executable(lab01 1lab.cpp perevod.cpp)
 
 # Добавление тестов
 enable_testing()
 
-add_executable(tests tests/lab1_tests.cpp  perevodik.cpp)
+add_executable(tests tests/lab1_tests.cpp  perevod.cpp)
 target_link_libraries(tests gtest_main)
 
 # Добавление тестов в тестовый набор

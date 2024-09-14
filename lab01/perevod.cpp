@@ -1,8 +1,8 @@
 
-#include "perevodik.h"
+#include "perevod.h"
 #include <string>
 
-std::string perevodik(int hour, int minute, const std::string& period) {
+std::string perevod(int hour, int minute, const std::string& period) {
     // Проверка корректности входных данных
     if (hour < 1 || hour > 12) {
         return "Ошибка: Час должен быть в диапазоне от 1 до 12";
@@ -26,22 +26,22 @@ std::string perevodik(int hour, int minute, const std::string& period) {
     }
 
     // Форматирование в формат строки
-    std::string resultatik;
+    std::string result;
 
     // Добавляем часы
     if (hour < 10) {
-        resultatik += "0";
+        result += "0";
     }
-    resultatik += std::to_string(hour);
+    result += std::to_string(hour);
 
     // Добавляем двоеточие для красоты
-    resultatik += ":";
+    result += ":";
 
     // Добавляем минуты
     if (minute < 10) {
-        resultatik += "0";
+        result += "0";
     }
-    resultatik += std::to_string(minute);
+    result += std::to_string(minute);
 
-    return resultatik;
+    return result;
 }
