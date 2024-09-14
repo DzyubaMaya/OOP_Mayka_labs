@@ -5,13 +5,13 @@
 std::string perevodik(int hour, int minute, const std::string& period) {
     // Проверка корректности входных данных
     if (hour < 1 || hour > 12) {
-        return "Ошибочка: Час должен быть в диапазоне от 1 до 12";
+        return "Ошибка: Час должен быть в диапазоне от 1 до 12";
     }
     if (minute < 0 || minute > 59) {
-        return "Ошибочка: Минуты должны быть в диапазоне от 0 до 59";
+        return "Ошибка: Минуты должны быть в диапазоне от 0 до 59";
     }
     if (period != "am" && period != "pm") {
-        return "Ошибочка: Период должен быть 'am' или 'pm'";
+        return "Ошибка: Период должен быть 'am' или 'pm'";
     }
     
     // Преобразование часов в 24-часовой формат
@@ -28,7 +28,7 @@ std::string perevodik(int hour, int minute, const std::string& period) {
     // Форматирование в формат строки
     std::string resultatik;
 
-    // Добавляем часики
+    // Добавляем часы
     if (hour < 10) {
         resultatik += "0";
     }
@@ -37,7 +37,7 @@ std::string perevodik(int hour, int minute, const std::string& period) {
     // Добавляем двоеточие для красоты
     resultatik += ":";
 
-    // Добавляем минуточки
+    // Добавляем минуты
     if (minute < 10) {
         resultatik += "0";
     }

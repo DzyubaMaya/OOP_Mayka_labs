@@ -12,9 +12,9 @@ int main() {
     while (true) {
         std::cout << "Введите час (1-12): ";
         std::cin >> hour;
-        //проверяем часики
+        //проверяем часы
         resultatik = perevodik(hour, 0, "am"); 
-        if (resultatik.find("Ошибочка") == std::string::npos) {
+        if (resultatik.find("Ошибка") == std::string::npos) {
             break;
         }
         std::cout << resultatik << std::endl;
@@ -26,7 +26,7 @@ int main() {
         std::cin >> minute;
         //проверяем минуты
         resultatik = perevodik(1, minute, "am"); 
-        if (resultatik.find("Ошибочка") == std::string::npos) {
+        if (resultatik.find("Ошибка") == std::string::npos) {
             break;
         }
         std::cout << resultatik << std::endl;
@@ -38,7 +38,7 @@ int main() {
         std::cin >> period;
         //проверяем период
         resultatik = perevodik(1, 0, period); 
-        if (resultatik.find("Ошибочка") == std::string::npos) {
+        if (resultatik.find("Ошибка") == std::string::npos) {
             break;
         }
         std::cout << resultatik << std::endl;

@@ -27,15 +27,15 @@ TEST(Time_Test, ValidTime_Noon) {
 
 // Тест для проверки некорректных входных данных
 TEST(Time_Test, InvalidHour) {
-    EXPECT_EQ(perevodik(13, 45, "am"), "Ошибочка: Час должен быть в диапазоне от 1 до 12");
+    EXPECT_EQ(perevodik(13, 45, "am"), "Ошибка: Час должен быть в диапазоне от 1 до 12");
 }
 
 TEST(Time_Test, InvalidMinutes) {
-    EXPECT_EQ(perevodik(3, 60, "am"), "Ошибочка: Минуты должны быть в диапазоне от 0 до 59");
+    EXPECT_EQ(perevodik(3, 60, "am"), "Ошибка: Минуты должны быть в диапазоне от 0 до 59");
 }
 
 TEST(Time_Test, InvalidPeriod) {
-    EXPECT_EQ(perevodik(3, 45, "xx"), "Ошибочка: Период должен быть 'am' или 'pm'");
+    EXPECT_EQ(perevodik(3, 45, "xx"), "Ошибка: Период должен быть 'am' или 'pm'");
 }
 
 
