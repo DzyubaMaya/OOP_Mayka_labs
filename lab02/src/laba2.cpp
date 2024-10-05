@@ -119,7 +119,7 @@ Three Three::add(const Three &other) const {
         // сумма цифр и переноса
         int sum = digit1 + digit2 + temp;
 
-        //результат в массив
+        
         result_array[i] = (sum % 3) + '0';
 
         //обновление переноса
