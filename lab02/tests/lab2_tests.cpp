@@ -1,7 +1,13 @@
 #include <gtest/gtest.h>
 #include "../include/laba2.h"
 
-
+// Тест конструктора по умолчанию
+TEST(ThreeTest, DefaultConstructor) {
+    Three t;
+    std::ostringstream oss;
+    t.print(oss);
+    EXPECT_EQ(oss.str(), "");  
+}
 
 // Тест конструктора с беззнаковым десятичным числом
 TEST(ThreeTest, ConstructorWithUnsignedInt) {

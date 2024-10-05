@@ -225,6 +225,11 @@ bool Three::lt(const Three &other) const {
     size_t i = 0;
     while (i < _size && _array[i] == other._array[i])
         ++i;
+
+    // Если все элементы равны, то числа равны(проверка на выход за пределы массива)
+    if (i == _size)
+        return false;
+
     return _array[i] < other._array[i];
 }
 
@@ -242,6 +247,11 @@ bool Three::gt(const Three &other) const {
     size_t i = 0;
     while (i < _size && _array[i] == other._array[i])
         ++i;
+
+    // Если все элементы равны, то числа равны(проверка на выход за границы массива)
+    if (i == _size)
+        return false;
+
     return _array[i] > other._array[i];
 }
 
