@@ -113,44 +113,4 @@ int main() {
 
 
 
-    // Добавляем фигуры в массив
-    //FigureArray.add(&rhombus1);
-    // FigureArray.add(&pentagon1);
-    // FigureArray.add(&hexagon1);
-
-    // // Выводим координаты всех фигур
-    // std::cout << "Coordinates of all figures:\n";
-    // FigureArray.getCoordinates(std::cout);
-
-    // // Выводим геометрические центры всех фигур
-    // std::cout << "\nGeometrical centers of all figures:\n";
-    // FigureArray.getGeometricalCenter(std::cout);
-
-    // Вычисляем и выводим общую площадь всех фигур
-    //double totalArea = FigureArray.getTotalArea();
-    //std::cout << "\nTotal area of all figures: " << totalArea << "\n";
-
-//     // Проверяем равенство фигур
-      //std::cout << "r2 == r: " << (r1 == r2) << std::endl;
-    //   std::cout << "p3 == p2: " << (p1 == p2) << std::endl;
-    //   std::cout << "h == h2: " << (h1 == h2) << std::endl;
-
-//     // Изменяем одну из фигур и проверяем неравенство
-//     r2 = Rhombus({1, 1}, {5, 5});
-//     std::cout << "r1 == r2 after modification: " << (r1 == r2) << std::endl;
-
-//     // Вводим новые данные для фигур
-//     std::cout << "Enter new data for Rhombus r1: ";
-//     std::cin >> r1;
- //    std::cout << "Enter new data for Pentagon p1: ";
- //    std::cin >> p1;
-//     std::cout << "Enter new data for Hexagon h1: ";
-//     std::cin >> h1;
-
-//     // Выводим обновленную информацию о фигурах
-//     std::cout << "Updated Rhombus r1: " << r1 << std::endl;
-//     std::cout << "Updated Pentagon p1: " << p1 << std::endl;
-//     std::cout << "Updated Hexagon h1: " << h1 << std::endl;
-
-//    return 0;
-//}
+    

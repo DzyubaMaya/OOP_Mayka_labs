@@ -2,13 +2,13 @@
 #include "../include/figure.h"
 #include "array.h"
 
-// Реализация метода setCapacity
+
 void FigureArray::setCapacity(size_t value) {
     data = reallocate(data, pSize, value);// Перераспределяем память под новый размер
     capacity = value;
 }
 
-// Реализация метода reallocate
+
 Figure** FigureArray::reallocate(Figure** oldData, size_t oldSize, size_t newSize) {
     Figure** data = new Figure* [newSize];
     // Копируем элементы из старого массива в новый
@@ -22,15 +22,15 @@ Figure** FigureArray::reallocate(Figure** oldData, size_t oldSize, size_t newSiz
     return data;
 }
 
-// Реализация конструктора по умолчанию
+
 FigureArray::FigureArray() : pSize(0), capacity(0), data(nullptr) { }
 
-// Реализация конструктора с параметром
+
 FigureArray::FigureArray(size_t n) : pSize(n), capacity(n) {
     data = reallocate(nullptr, 0, n);
 }
 
-// Реализация деструктора
+
 FigureArray::~FigureArray() {
     // Освобождаем память, занятую массивом указателей
     delete [] data;
@@ -80,7 +80,7 @@ void FigureArray::resize(size_t newSize) {
     if (newSize > capacity) {
         setCapacity(newSize);
     }
-    // Обновляем текущий размер массива
+    
     pSize = newSize;
 }
 

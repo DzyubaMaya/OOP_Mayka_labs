@@ -75,7 +75,7 @@ std::ostream &Points::print(std::ostream &os) const
     return os;
 }
 
-// Дружественная функция для вывода координат в поток с использованием оператора <<
+
 std::ostream &operator<<(std::ostream &os, const Points &points)
 {
     return points.print(os);

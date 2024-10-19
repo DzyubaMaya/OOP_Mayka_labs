@@ -30,20 +30,20 @@ double Rhombus::square() const {
     return static_cast<double>(*this);
 }
 
-// Реализация чисто виртуального оператора для получения площади
+
 Rhombus::operator double() const {
     double d1 = distance(points[0], points[2]); // Длина диагонали по оси X
     double d2 = distance(points[1], points[3]); // Длина диагонали по оси Y
     return (d1 * d2) / 2; // Площадь ромба
 }
 
-// Реализация чисто виртуального оператора присваивания копированием
+
 Rhombus &Rhombus::operator=(const Rhombus &other) {
     points = other.points;
     return *this;
 }
 
-// Реализация виртуального оператора присваивания перемещением
+
 Rhombus &Rhombus::operator=(Rhombus &&other) noexcept {
     points = std::move(other.points);
     return *this;

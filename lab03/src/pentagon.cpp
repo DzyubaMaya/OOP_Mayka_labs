@@ -25,7 +25,7 @@ Pentagon& Pentagon::operator=(Pentagon &&pentagon) noexcept {
     return *this;
 }
 
-// Оператор сравнения на равенство
+// Оператор сравнения 
 bool Pentagon::operator==(const Pentagon &other) {
     return center == other.center && radius == other.radius;
 }

@@ -50,13 +50,13 @@ Points Hexagon::geometricalCenter() const {
     return center;  // Геометрический центр шестиугольника совпадает с его центром
 }
 
-// Дружественная функция для вывода шестиугольника в поток
+
 std::ostream& operator<<(std::ostream &stream, const Hexagon &hexagon) {
     stream << "Hexagon: " << hexagon.center << " " << hexagon.radius;
     return stream;
 }
 
-// Дружественная функция для ввода шестиугольника из потока
+
 std::istream& operator>>(std::istream &stream, Hexagon &hexagon) {
     stream >> hexagon.center >> hexagon.radius;
     return stream;
