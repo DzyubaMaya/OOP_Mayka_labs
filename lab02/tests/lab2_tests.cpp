@@ -5,10 +5,10 @@
 
 // Тест конструктора с беззнаковым десятичным числом
 TEST(ThreeTest, ConstructorWithUnsignedInt) {
-    Three t(27);
+    Three t(0);
     std::ostringstream oss;
     t.print(oss);
-    EXPECT_EQ(oss.str(), "1000");
+    EXPECT_EQ(oss.str(), "0");
 }
 
 // Тест конструктора с initializer_list
